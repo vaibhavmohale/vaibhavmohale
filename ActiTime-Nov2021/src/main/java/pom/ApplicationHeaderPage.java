@@ -26,7 +26,7 @@ public class ApplicationHeaderPage {
 	private WebElement logout ;
 	
 	@FindBy (xpath = "//a[text()='Logout']")
-	private WebElement logout123 ;
+	private WebElement logout12345 ;
 	
 	public ApplicationHeaderPage(WebDriver driver)  // driver = new ChromeDriver()
 	{
