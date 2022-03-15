@@ -25,6 +25,9 @@ public class ApplicationHeaderPage {
 	@FindBy (xpath = "//a[text()='Logout']")
 	private WebElement logout ;
 	
+	@FindBy (xpath = "//a[text()='Logout']")
+	private WebElement logout123 ;
+	
 	public ApplicationHeaderPage(WebDriver driver)  // driver = new ChromeDriver()
 	{
 		PageFactory.initElements(driver,this);
