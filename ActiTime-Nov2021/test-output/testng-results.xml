@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="4" total="8" passed="0" failed="4" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-03-11T01:06:40 IST" name="Failed suite [Suite]" finished-at="2022-03-11T01:08:43 IST" duration-ms="122608">
+    <groups>
+    </groups>
+    <test started-at="2022-03-11T01:06:40 IST" name="ChromeTest(failed)" finished-at="2022-03-11T01:07:26 IST" duration-ms="46112">
+      <class name="test.VerifyApplicationHeader">
+        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:test.VerifyApplicationHeader@6253c26]" started-at="2022-03-11T01:06:50 IST" name="launchBrowser" finished-at="2022-03-11T01:06:54 IST" duration-ms="4223" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method is-config="true" signature="createObjectOfPOMClasses()[pri:0, instance:test.VerifyApplicationHeader@6253c26]" started-at="2022-03-11T01:06:55 IST" name="createObjectOfPOMClasses" finished-at="2022-03-11T01:06:57 IST" duration-ms="1823" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createObjectOfPOMClasses -->
+        <test-method is-config="true" signature="loginToApplication()[pri:0, instance:test.VerifyApplicationHeader@6253c26]" started-at="2022-03-11T01:06:57 IST" name="loginToApplication" finished-at="2022-03-11T01:07:08 IST" duration-ms="11325" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToApplication -->
+        <test-method signature="verifyTaskPage()[pri:0, instance:test.VerifyApplicationHeader@6253c26]" started-at="2022-03-11T01:07:08 IST" name="verifyTaskPage" finished-at="2022-03-11T01:07:23 IST" duration-ms="14810" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [http://localhost/tasks/otasklist.] but found [http://localhost/tasks/otasklist.do]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [http://localhost/tasks/otasklist.] but found [http://localhost/tasks/otasklist.do]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at test.VerifyApplicationHeader.verifyTaskPage(VerifyApplicationHeader.java:91)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTaskPage -->
+        <test-method is-config="true" signature="logoutFromApplication(org.testng.ITestResult)[pri:0, instance:test.VerifyApplicationHeader@6253c26]" started-at="2022-03-11T01:07:23 IST" name="logoutFromApplication" finished-at="2022-03-11T01:07:24 IST" duration-ms="1077" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyTaskPage status=FAILURE method=VerifyApplicationHeader.verifyTaskPage()[pri:0, instance:test.VerifyApplicationHeader@6253c26] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutFromApplication -->
+        <test-method is-config="true" signature="clearPOMObject()[pri:0, instance:test.VerifyApplicationHeader@6253c26]" started-at="2022-03-11T01:07:24 IST" name="clearPOMObject" finished-at="2022-03-11T01:07:24 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearPOMObject -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.VerifyApplicationHeader@6253c26]" started-at="2022-03-11T01:07:25 IST" name="closeBrowser" finished-at="2022-03-11T01:07:26 IST" duration-ms="883" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- test.VerifyApplicationHeader -->
+      <class name="test.TestClass">
+        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:test.TestClass@61001b64]" started-at="2022-03-11T01:06:40 IST" name="launchBrowser" finished-at="2022-03-11T01:06:50 IST" duration-ms="10289" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method is-config="true" signature="createObjectOfPOMClasses()[pri:0, instance:test.TestClass@61001b64]" started-at="2022-03-11T01:06:55 IST" name="createObjectOfPOMClasses" finished-at="2022-03-11T01:06:57 IST" duration-ms="1821" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createObjectOfPOMClasses -->
+        <test-method is-config="true" signature="loginToApplication()[pri:0, instance:test.TestClass@61001b64]" started-at="2022-03-11T01:06:57 IST" name="loginToApplication" finished-at="2022-03-11T01:07:08 IST" duration-ms="11329" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToApplication -->
+        <test-method signature="verifyTaskPage()[pri:0, instance:test.TestClass@61001b64]" started-at="2022-03-11T01:07:08 IST" name="verifyTaskPage" finished-at="2022-03-11T01:07:23 IST" duration-ms="14810" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [http://localhost/tasks/otasklist.] but found [http://localhost/tasks/otasklist.do]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [http://localhost/tasks/otasklist.] but found [http://localhost/tasks/otasklist.do]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at test.TestClass.verifyTaskPage(TestClass.java:91)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTaskPage -->
+        <test-method is-config="true" signature="logoutFromApplication(org.testng.ITestResult)[pri:0, instance:test.TestClass@61001b64]" started-at="2022-03-11T01:07:23 IST" name="logoutFromApplication" finished-at="2022-03-11T01:07:24 IST" duration-ms="1225" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyTaskPage status=FAILURE method=TestClass.verifyTaskPage()[pri:0, instance:test.TestClass@61001b64] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutFromApplication -->
+        <test-method is-config="true" signature="clearPOMObject()[pri:0, instance:test.TestClass@61001b64]" started-at="2022-03-11T01:07:24 IST" name="clearPOMObject" finished-at="2022-03-11T01:07:24 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearPOMObject -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TestClass@61001b64]" started-at="2022-03-11T01:07:24 IST" name="closeBrowser" finished-at="2022-03-11T01:07:25 IST" duration-ms="1134" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- test.TestClass -->
+    </test> <!-- ChromeTest(failed) -->
+    <test started-at="2022-03-11T01:07:26 IST" name="EdgeTest(failed)" finished-at="2022-03-11T01:08:43 IST" duration-ms="76315">
+      <class name="test.VerifyApplicationHeader">
+        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:test.VerifyApplicationHeader@6c1a5b54]" started-at="2022-03-11T01:07:43 IST" name="launchBrowser" finished-at="2022-03-11T01:07:50 IST" duration-ms="7172" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method is-config="true" signature="createObjectOfPOMClasses()[pri:0, instance:test.VerifyApplicationHeader@6c1a5b54]" started-at="2022-03-11T01:07:50 IST" name="createObjectOfPOMClasses" finished-at="2022-03-11T01:07:50 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createObjectOfPOMClasses -->
+        <test-method is-config="true" signature="loginToApplication()[pri:0, instance:test.VerifyApplicationHeader@6c1a5b54]" started-at="2022-03-11T01:07:50 IST" name="loginToApplication" finished-at="2022-03-11T01:08:18 IST" duration-ms="27676" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToApplication -->
+        <test-method signature="verifyTaskPage()[pri:0, instance:test.VerifyApplicationHeader@6c1a5b54]" started-at="2022-03-11T01:08:18 IST" name="verifyTaskPage" finished-at="2022-03-11T01:08:38 IST" duration-ms="20484" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [http://localhost/tasks/otasklist.] but found [http://localhost/tasks/otasklist.do]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [http://localhost/tasks/otasklist.] but found [http://localhost/tasks/otasklist.do]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at test.VerifyApplicationHeader.verifyTaskPage(VerifyApplicationHeader.java:91)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTaskPage -->
+        <test-method is-config="true" signature="logoutFromApplication(org.testng.ITestResult)[pri:0, instance:test.VerifyApplicationHeader@6c1a5b54]" started-at="2022-03-11T01:08:38 IST" name="logoutFromApplication" finished-at="2022-03-11T01:08:40 IST" duration-ms="2295" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyTaskPage status=FAILURE method=VerifyApplicationHeader.verifyTaskPage()[pri:0, instance:test.VerifyApplicationHeader@6c1a5b54] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutFromApplication -->
+        <test-method is-config="true" signature="clearPOMObject()[pri:0, instance:test.VerifyApplicationHeader@6c1a5b54]" started-at="2022-03-11T01:08:40 IST" name="clearPOMObject" finished-at="2022-03-11T01:08:40 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearPOMObject -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.VerifyApplicationHeader@6c1a5b54]" started-at="2022-03-11T01:08:41 IST" name="closeBrowser" finished-at="2022-03-11T01:08:43 IST" duration-ms="1289" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- test.VerifyApplicationHeader -->
+      <class name="test.TestClass">
+        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:test.TestClass@20140db9]" started-at="2022-03-11T01:07:26 IST" name="launchBrowser" finished-at="2022-03-11T01:07:43 IST" duration-ms="16505" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method is-config="true" signature="createObjectOfPOMClasses()[pri:0, instance:test.TestClass@20140db9]" started-at="2022-03-11T01:07:50 IST" name="createObjectOfPOMClasses" finished-at="2022-03-11T01:07:50 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createObjectOfPOMClasses -->
+        <test-method is-config="true" signature="loginToApplication()[pri:0, instance:test.TestClass@20140db9]" started-at="2022-03-11T01:07:50 IST" name="loginToApplication" finished-at="2022-03-11T01:08:18 IST" duration-ms="27676" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToApplication -->
+        <test-method signature="verifyTaskPage()[pri:0, instance:test.TestClass@20140db9]" started-at="2022-03-11T01:08:18 IST" name="verifyTaskPage" finished-at="2022-03-11T01:08:38 IST" duration-ms="20466" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [http://localhost/tasks/otasklist.] but found [http://localhost/tasks/otasklist.do]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [http://localhost/tasks/otasklist.] but found [http://localhost/tasks/otasklist.do]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at test.TestClass.verifyTaskPage(TestClass.java:91)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTaskPage -->
+        <test-method is-config="true" signature="logoutFromApplication(org.testng.ITestResult)[pri:0, instance:test.TestClass@20140db9]" started-at="2022-03-11T01:08:38 IST" name="logoutFromApplication" finished-at="2022-03-11T01:08:40 IST" duration-ms="2168" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyTaskPage status=FAILURE method=TestClass.verifyTaskPage()[pri:0, instance:test.TestClass@20140db9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutFromApplication -->
+        <test-method is-config="true" signature="clearPOMObject()[pri:0, instance:test.TestClass@20140db9]" started-at="2022-03-11T01:08:40 IST" name="clearPOMObject" finished-at="2022-03-11T01:08:40 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearPOMObject -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TestClass@20140db9]" started-at="2022-03-11T01:08:40 IST" name="closeBrowser" finished-at="2022-03-11T01:08:41 IST" duration-ms="884" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- test.TestClass -->
+    </test> <!-- EdgeTest(failed) -->
+  </suite> <!-- Failed suite [Suite] -->
+</testng-results>
