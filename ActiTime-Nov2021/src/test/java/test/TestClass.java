@@ -66,7 +66,7 @@ public class TestClass extends  Browser{
 		}
 		
 		@BeforeMethod
-		public void loginToApplication() throws IOException {	
+		public void loginToApplication() throws IOException  {	
 			 System.out.println("loginToApplication");
 			 driver.get("http://localhost/login.do");
 			 
@@ -77,6 +77,7 @@ public class TestClass extends  Browser{
 			 loginPage.sendPasswordName(password);
 			 loginPage.clickOnKeepMeLogin();
 			 loginPage.clickOnLogin();
+			
 
 		}
 		
@@ -88,7 +89,7 @@ public class TestClass extends  Browser{
 			 applicationHeaderPage.openTasksPage();
 			 String url = driver.getCurrentUrl();
 			 String title = driver.getTitle();
-			 Assert.assertEquals(url,"http://localhost/tasks/otasklist.");
+			 Assert.assertEquals(url,"http://localhost/tasks/otasklist.do");
 			 soft.assertEquals(title,"actiTIME - Open Tasks" );
 			 soft.assertAll();
 		 }

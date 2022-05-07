@@ -13,7 +13,7 @@ public class Browser {
 	}   
       
     public static WebDriver launchMicrosoftEdgeBrowser() {
-        System.setProperty("webdriver.edge.driver", "C:\\Users\\Vaibhav\\Documents\\msedgedriver.exe");
+        System.setProperty("webdriver.edge.driver", "C:\\Users\\Vaibhav\\Downloads\\msedgedriver.exe");
         WebDriver driver = new EdgeDriver();
         return driver;
 
@@ -21,5 +21,5 @@ public class Browser {
              
    
 }
-
+ 
 

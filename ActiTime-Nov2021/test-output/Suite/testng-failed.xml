@@ -18,17 +18,6 @@
           <include name="clearPOMObject"/>
         </methods>
       </class> <!-- test.VerifyApplicationHeader -->
-      <class name="test.TestClass">
-        <methods>
-          <include name="createObjectOfPOMClasses"/>
-          <include name="launchBrowser"/>
-          <include name="closeBrowser"/>
-          <include name="clearPOMObject"/>
-          <include name="loginToApplication"/>
-          <include name="logoutFromApplication"/>
-          <include name="verifyTaskPage"/>
-        </methods>
-      </class> <!-- test.TestClass -->
     </classes>
   </test> <!-- ChromeTest(failed) -->
   <test thread-count="2" parallel="classes" name="EdgeTest(failed)">
@@ -40,6 +29,7 @@
           <include name="verifyTaskPage"/>
           <include name="loginToApplication"/>
           <include name="logoutFromApplication"/>
+          <include name="verifyUsersPage"/>
           <include name="createObjectOfPOMClasses"/>
           <include name="closeBrowser"/>
           <include name="clearPOMObject"/>
@@ -51,6 +41,7 @@
           <include name="launchBrowser"/>
           <include name="closeBrowser"/>
           <include name="clearPOMObject"/>
+          <include name="verifyUsersPage"/>
           <include name="loginToApplication"/>
           <include name="logoutFromApplication"/>
           <include name="verifyTaskPage"/>

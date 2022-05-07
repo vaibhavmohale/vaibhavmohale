@@ -88,7 +88,7 @@ public class VerifyApplicationHeader extends Browser {
 		 applicationHeaderPage.openTasksPage();
 		 String url = driver.getCurrentUrl();
 		 String title = driver.getTitle();
-		 Assert.assertEquals(url,"http://localhost/tasks/otasklist.");
+		 Assert.assertEquals(url,"http://localhost/tasks/otasklist.do");
 		 soft.assertEquals(title,"actiTIME - Open Tasks" );
 		 soft.assertAll();
 	 }

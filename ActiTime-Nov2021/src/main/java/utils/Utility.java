@@ -4,6 +4,8 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Date;
+
+import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -27,14 +29,35 @@ public class Utility {
 	    FileHandler.copy(source, dest);
 	}    
 	  
-	   public static String getDataFromExcel(String sheet, int row, int cell) throws  IOException {
-	    	 
+	   public static String getDataFromExcel(String sheetName, int row, int cell) throws  IOException {
+	    	String data; 
 	    	String path = "C:\\Users\\Vaibhav\\Desktop\\Testing.xlsx" ;
 	 		
 	 		FileInputStream file = new FileInputStream(path);
 	 		
-	 		String data = WorkbookFactory.create(file).getSheet(sheet).getRow(row).getCell(cell).getStringCellValue();
+	 		Sheet sheet= WorkbookFactory.create(file).getSheet(sheetName);
 	 		
+	 		try
+	 		{
+	 			data = sheet.getRow(row).getCell(cell).getStringCellValue();
+	 		}
+	 		catch(IllegalStateException ref)
+	 		{
+	 			double value = sheet.getRow(row).getCell(cell).getNumericCellValue();
+	 			if(value%1==0.0)
+	 			{
+	 				long l = (long)value;
+	 				data = String.valueOf(l);
+	 			}
+	 			else
+	 			{
+	 				long l = (long)(value/1);
+	 				float k = (float)(value%1);
+	 				String decimal = Float.toString(k);
+	 				decimal = decimal.substring(1);
+	 				data = Long.toString(l)+decimal;
+	 			}
+	 		}
 	 		return data;	 
 	    	 
 	}

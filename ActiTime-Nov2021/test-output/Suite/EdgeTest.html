@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>EdgeTest</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/2/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>4/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Mar 11 00:56:34 IST 2022</td>
+<td>Started on:</td><td>Thu Apr 07 00:21:02 IST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>106 seconds (106829 ms)</td>
+<tr><td>Total time:</td><td>81 seconds (81785 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,82 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='test.VerifyApplicationHeader.verifyTaskPage()'><b>verifyTaskPage</b><br>Test class: test.VerifyApplicationHeader</td>
-<td><div><pre>java.lang.AssertionError: expected [http://localhost/tasks/otasklist.] but found [http://localhost/tasks/otasklist.do]
-	at test.VerifyApplicationHeader.verifyTaskPage(VerifyApplicationHeader.java:91)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1676468152", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1676468152'><pre>java.lang.AssertionError: expected [http://localhost/tasks/otasklist.] but found [http://localhost/tasks/otasklist.do]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-	at org.testng.Assert.assertEquals(Assert.java:122)
-	at org.testng.Assert.assertEquals(Assert.java:629)
-	at org.testng.Assert.assertEquals(Assert.java:639)
-	at test.VerifyApplicationHeader.verifyTaskPage(VerifyApplicationHeader.java:91)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-</pre></div></td>
-<td>16</td>
-<td>test.VerifyApplicationHeader@1e0b4072</td></tr>
-<tr>
-<td title='test.TestClass.verifyTaskPage()'><b>verifyTaskPage</b><br>Test class: test.TestClass</td>
-<td><div><pre>java.lang.AssertionError: expected [http://localhost/tasks/otasklist.] but found [http://localhost/tasks/otasklist.do]
-	at test.TestClass.verifyTaskPage(TestClass.java:91)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace697213547", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace697213547'><pre>java.lang.AssertionError: expected [http://localhost/tasks/otasklist.] but found [http://localhost/tasks/otasklist.do]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-	at org.testng.Assert.assertEquals(Assert.java:122)
-	at org.testng.Assert.assertEquals(Assert.java:629)
-	at org.testng.Assert.assertEquals(Assert.java:639)
-	at test.TestClass.verifyTaskPage(TestClass.java:91)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-</pre></div></td>
-<td>16</td>
-<td>test.TestClass@4b45a2f5</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -151,15 +75,25 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='test.VerifyApplicationHeader.verifyUsersPage()'><b>verifyUsersPage</b><br>Test class: test.VerifyApplicationHeader</td>
-<td></td>
-<td>9</td>
-<td>test.VerifyApplicationHeader@1e0b4072</td></tr>
-<tr>
 <td title='test.TestClass.verifyUsersPage()'><b>verifyUsersPage</b><br>Test class: test.TestClass</td>
 <td></td>
-<td>9</td>
-<td>test.TestClass@4b45a2f5</td></tr>
+<td>17</td>
+<td>test.TestClass@f09733f</td></tr>
+<tr>
+<td title='test.TestClass.verifyTaskPage()'><b>verifyTaskPage</b><br>Test class: test.TestClass</td>
+<td></td>
+<td>13</td>
+<td>test.TestClass@f09733f</td></tr>
+<tr>
+<td title='test.VerifyApplicationHeader.verifyTaskPage()'><b>verifyTaskPage</b><br>Test class: test.VerifyApplicationHeader</td>
+<td></td>
+<td>14</td>
+<td>test.VerifyApplicationHeader@791f145a</td></tr>
+<tr>
+<td title='test.VerifyApplicationHeader.verifyUsersPage()'><b>verifyUsersPage</b><br>Test class: test.VerifyApplicationHeader</td>
+<td></td>
+<td>18</td>
+<td>test.VerifyApplicationHeader@791f145a</td></tr>
 </table><p>
 </body>
 </html>

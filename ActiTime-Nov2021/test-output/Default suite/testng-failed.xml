@@ -3,18 +3,18 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="test.VerifyApplicationHeader">
+      <class name="test.TestClass">
         <methods>
-          <include name="launchBrowser"/>
-          <include name="verifyTaskPage"/>
-          <include name="loginToApplication"/>
-          <include name="logoutFromApplication"/>
-          <include name="verifyUsersPage"/>
           <include name="createObjectOfPOMClasses"/>
+          <include name="launchBrowser"/>
           <include name="closeBrowser"/>
           <include name="clearPOMObject"/>
+          <include name="verifyUsersPage"/>
+          <include name="loginToApplication"/>
+          <include name="logoutFromApplication"/>
+          <include name="verifyTaskPage"/>
         </methods>
-      </class> <!-- test.VerifyApplicationHeader -->
+      </class> <!-- test.TestClass -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
